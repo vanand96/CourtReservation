@@ -9,7 +9,7 @@ public class ReserveCourt {
         Browser browser = new Browser(driver);
         driver = browser.chromeBrowser("not-headless");
 
-        LoginPage loginPage = new LoginPage(driver, 30);
+        LoginPage loginPage = new LoginPage(driver, elementTimeout);
         ReservationPage reservationPage = new ReservationPage(driver, elementTimeout);
 
         try {
