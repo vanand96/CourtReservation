@@ -10,7 +10,7 @@ public class ReserveCourt {
         driver = browser.chromeBrowser("not-headless");
 
         LoginPage loginPage = new LoginPage(driver, 30);
-        ReservationPage reservationPage = new ReservationPage(driver, 30);
+        ReservationPage reservationPage = new ReservationPage(driver, elementTimeout);
 
         try {
             loginPage.login(Constant.USERNAME, Constant.PASSWORD);
