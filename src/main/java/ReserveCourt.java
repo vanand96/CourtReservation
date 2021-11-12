@@ -14,10 +14,10 @@ public class ReserveCourt {
 
         try {
             loginPage.login(Constant.USERNAME, Constant.PASSWORD);
-            //reservationPage.bookCourt("12:00PM");
-            //browser.closeBrowser();
+            reservationPage.bookCourt("12:00PM");
+            browser.closeBrowser();
         } catch (Exception unknown) {
-            //browser.closeBrowser();
+            browser.closeBrowser();
             System.out.println("Unable to reserve the court");
         }
     }
